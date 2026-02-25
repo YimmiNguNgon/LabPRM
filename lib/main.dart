@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Lab4/lab4_menu.dart';
-import 'Lab1.dart';
+import 'Lab5/screens/home_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,8 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Movie App Lab 5',
       debugShowCheckedModeBanner: false,
-      home: Lab4MenuApp(),
+      theme: ThemeData(
+        colorSchemeSeed: Colors.deepPurple,
+        useMaterial3: true,
+        fontFamily: 'Roboto',
+      ),
+      home: const HomeScreen(),
     );
   }
 }
